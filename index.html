@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>소르지낙 슈룹 마음연구소</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <a href="https://www.instagram.com/sorginak_tarot?igsh=MWRwNXExdmhiNnFqbg%3D%3D&utm_source=qr" target="_blank" class="side-story">
+    <span class="side-title">오늘의<br>소르지낙</span>
+  </a>
+
+  <main class="page">
+    <section class="hero">
+      <div class="badge">Sorginak Reading</div>
+      <h1>당신이 고른 카드는<br>지금의 마음을 비춥니다.</h1>
+      <p>카드 한 장을 고르고,<br>그 카드에서 가장 먼저 느껴지는 감각을 선택해보세요.</p>
+    </section>
+
+    <section class="card-section">
+
+  
+      <h2 id="readingGuide">마음이 끌리는 카드를 선택하세요.</h2>
+
+      <div class="card-container">
+        <button class="tarot-card" type="button">
+          <img src="./images/back.png" alt="카드 뒷면">
+        </button>
+
+        <button class="tarot-card" type="button">
+          <img src="./images/back.png" alt="카드 뒷면">
+        </button>
+
+        <button class="tarot-card" type="button">
+          <img src="./images/back.png" alt="카드 뒷면">
+        </button>
+      </div>
+
+      <div id="questionBox" class="question-box hidden">
+        <p id="selectedCardName" class="selected-card-name"></p>
+        <h3 id="cardQuestion"></h3>
+        <div id="answerButtons" class="answer-buttons"></div>
+      </div>
+    </section>
+
+    <section id="resultSection" class="result-section hidden">
+      <div class="section-title">
+        <div class="badge">Your Reading Style</div>
+        <h2>당신의 리딩 스타일</h2>
+        <p>선택한 감각을 바탕으로 지금의 마음과 가장 잘 맞는 풍경을 보여드립니다.</p>
+      </div>
+
+      <div class="result-main">
+        <div class="result-image-wrap">
+          <img id="resultImage" src="" alt="">
+        </div>
+
+        <div class="result-content">
+          <p id="resultStyle" class="result-style"></p>
+          <h3 id="resultTitle"></h3>
+          <p id="resultMatch" class="result-match"></p>
+
+          <div class="result-text-box">
+            <h4>마음의 상태</h4>
+            <p id="resultMind"></p>
+          </div>
+
+          <div class="result-text-box">
+            <h4>추천 리딩</h4>
+            <p id="resultReading"></p>
+          </div>
+
+          <div id="resultPoints" class="point-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="styleSection" class="style-section hidden">
+      <div class="section-title">
+        <div class="badge">Sorginak Landscapes</div>
+        <h2>소르지낙의 아홉 가지 풍경</h2>
+        <p>풍경을 눌러 당신에게 맞는 리딩 스타일을 살펴보세요.</p>
+      </div>
+
+      <div id="landscapeButtons" class="landscape-buttons"></div>
+
+      <div class="landscape-map">
+        <div class="axis-label top">통찰</div>
+        <div class="axis-label bottom">회복</div>
+        <div class="axis-label left">감성</div>
+        <div class="axis-label right">분석</div>
+
+        <div id="userMarker" class="user-marker">👤</div>
+        <div id="mapPoints" class="map-points"></div>
+      </div>
+
+      <div class="landscape-detail">
+        <div class="landscape-image">
+          <img id="landscapeImage" src="" alt="">
+        </div>
+
+        <div class="landscape-info">
+          <p id="landscapeNumber" class="landscape-number"></p>
+          <h3 id="landscapeName"></h3>
+          <p id="landscapeEnglish" class="landscape-english"></p>
+          <p id="landscapeDesc" class="landscape-desc"></p>
+           <div class="landscape-quote">
+        <span class="quote-mark">❝</span>
+        <p id="landscapeQuote"></p>
+    </div>
+
+  </div>
+          <div class="score-board">
+            <div class="score-row">
+              <span>따뜻함</span>
+              <div id="scoreWarm" class="score-dots warm"></div>
+                <span class="score-desc">마음을 부드럽게 감싸는 리딩</span>
+            </div>
+
+            <div class="score-row">
+              <span>통찰</span>
+              <div id="scoreInsight" class="score-dots insight"></div>
+              <span class="score-desc">본질을 꿰뚫는 리딩</span>
+            </div>
+
+            <div class="score-row">
+              <span>회복</span>
+              <div id="scoreHeal" class="score-dots heal"></div>
+                  <span class="score-desc">감정을 회복시키는 리딩</span>
+            </div>
+
+            <div class="score-row">
+              <span>속도</span>
+              <div id="scoreSpeed" class="score-dots speed"></div>
+              <span class="score-desc">천천히 깊어지는 리딩</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="after-section">
+      <div class="section-title">
+        <div class="badge">Sorginak Reading</div>
+        <h2>오늘의 카드는<br>시작일 뿐입니다.</h2>
+        <p>더 깊이 자신의 구조를 이해하고 싶다면,<br>1:1 상담을 통해 함께 살펴보세요.</p>
+      </div>
+
+      <div class="youtube-card">
+        <div class="youtube-thumb">
+          <iframe
+            src="https://www.youtube.com/embed/6T0CcxuJrAU?start=53"
+            title="소르지낙 리딩 영상"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <a href="https://pf.kakao.com/_mGtSxj" target="_blank" class="kakao-btn">
+        카카오채널 상담하기 →
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>상담은 미래를 맞히는 일이 아닙니다.<br>지금의 당신을 이해하는 일이라고 믿습니다.</p>
+  </footer>
+
+  <script src="./reading.js"></script>
+</body>
+</html>
